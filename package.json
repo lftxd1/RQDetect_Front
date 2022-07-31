@@ -1,0 +1,104 @@
+{
+  "name": "WSM",
+  "version": "2.0.0",
+  "description": "基于vue + elementUI的管理系统模板",
+  "author": "baimingxuan <354372738@qq.com>",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@wangeditor/editor": "^5.0.0",
+    "@wangeditor/editor-for-vue": "^1.0.0",
+    "axios": "^0.21.4",
+    "core-js": "^3.6.5",
+    "echarts": "^4.7.0",
+    "element-ui": "^2.13.0",
+    "file-saver": "^2.0.2",
+    "js-cookie": "^2.2.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lodash": "^4.17.20",
+    "mavon-editor": "^2.9.0",
+    "screenfull": "^5.0.2",
+    "v-org-tree": "^1.0.12",
+    "vg-editor": "^2.7.2",
+    "vue": "^2.6.11",
+    "vue-count-to": "^1.0.13",
+    "vue-cropper": "^0.5.4",
+    "vue-drr": "^1.0.9",
+    "vue-router": "^3.2.0",
+    "vue-video-player": "^5.0.2",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.5.1",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^6.0.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.3.8",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.5.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

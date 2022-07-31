@@ -1,0 +1,50 @@
+/* el-button禁用相关样式 */
+.el-button {
+  &.is-disabled {
+    cursor: default!important;
+  }
+  &.is-disabled {
+    &:focus,
+    &:hover {
+      cursor: default!important;
+    }
+  }
+}
+
+/* 子菜单箭头图标样式 */
+.el-submenu {
+  >.el-submenu__title {
+    i {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+}
+
+/* 卡片样式 */
+.el-card {
+  .el-card__header {
+    .title {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .el-card__body {
+    .content-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+/* 穿梭框样式 */
+.el-transfer-panel__body {
+  height: 280px;
+  .el-transfer-panel__list {
+    &.is-filterable {
+      height: 230px;
+    }
+  }
+}
